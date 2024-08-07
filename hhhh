@@ -94,7 +94,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/script
   Tab:AddButton({
 	Name = "سكربت يطير ناس ب كنبه",
 	Callback = function()
-loadstring(game:HttpGet('https://pastebin.com/raw/TXMNj1yy'))()
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
+Notify({
+Description = "تم تعديل السكربت قليلا";
+Title = "سكربت فينوم يرحب بكم";
+Duration = 10;
+});
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
   	end    
 })
 
